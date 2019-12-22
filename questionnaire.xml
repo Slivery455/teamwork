@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Paper>
+    <Question no = "0"
+                text = "1st Question:">
+        <Answer no = "0"
+                next = "1"
+                text = "First Answer"
+                VA = "1"
+                VB = "0"/>
+        <Answer no = "1"
+                next = "-1"
+                text = "Second Answer"
+                VA = "2"
+                VB = "4"/>
+        <Answer no = "2"
+                next = "2"
+                text = "Third Answer"
+                VA = "-1000"
+                VB = "0"/>
+        <Answer no = "3"
+                next = "1"
+                text = "Fourth Answer"
+                VA = "30"
+                VB = "90"/>
+    </Question>
+     <Question no = "1"
+                text = "2nd Question">
+        <Answer no = "0"
+                next = "-1"
+                text = "First Answer"/>
+        <Answer no = "1"
+                next = "-1"
+                text = "Second Answer"/>
+        <Answer no = "2"
+                next = "-1"
+                text = "Third Answer"/>
+    </Question>
+     <Question no = "2"
+                text = "3rd Question:">
+        <Answer no = "0"
+                next = "-1"
+                text = "First Answer"/>
+        <Answer no = "1"
+                next = "-1"
+                text = "Second Answer"/>
+        <Answer no = "2"
+                next = "-1"
+                text = "Third Answer"/>
+         <Answer no = "3"
+                next = "-1"
+                text = "Fourth Answer"/>
+         <Answer no = "4"
+                next = "-1"
+                text = "Fifth Answer"/>
+    </Question>
+</Paper>
