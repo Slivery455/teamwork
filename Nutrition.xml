@@ -1,0 +1,19 @@
+<?xml version = "1.1" encoding = "utf-8"?>
+<Kind version = "1.0">
+		<context id = "Fibre"/>                                       <!--粗纤维-->
+		<context id = "Magnesium"/>                          <!--镁元素-->
+		<context id = "Zinc"/>                                         <!--锌元素--> 
+		<context id = "Carbohydrate"/>                     <!--碳水化合物-->
+        <context id = "Calcium"/>                                 <!--钙元素-->
+        <context id = "Folic-acid"/>                              <!--叶酸-->
+        <context id = "Sodium"/>                                  <!--钠元素-->
+        <context id = "Cholesterol"/>                          <!--胆固醇-->
+        <context id = "Trans-fatty-acids"/>               <!--反式脂肪酸-->
+        <context id = "Lycopene"/>                              <!--番茄红素-->
+        <context id = "Carotene"/>                               <!--胡萝卜素-->
+        <context id = "VA"/>
+        <context id = "VB"/>
+        <context id = "VC"/>
+        <context id = "VD"/>
+        <context id = "VE"/>
+</Kind>

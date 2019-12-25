@@ -1,5 +1,5 @@
 from Store import Store
-from Fruit import Fruit
+from Food import Food
 from pyquery import PyQuery as pq
 from selenium import webdriver as wd
 import xml.dom.minidom as dom
@@ -26,7 +26,7 @@ class TianMaoReader:
             # Open the web page
             browser.get(
                 'https://list.tmall.com/search_product.htm?q=' + fruit.attr[
-                    'name'] + '水果&type=p&spm=a220m.1000858.a2227oh.d100&xl=%C6%BB%B9%FB_2&from=.list.pc_1_suggest')
+                    'name'] + '&type=p&spm=a220m.1000858.a2227oh.d100&xl=%C6%BB%B9%FB_2&from=.list.pc_1_suggest')
     # Write the context of the page which we searched to html file
             html = browser.page_source
             root = pq(html).__str__()
@@ -94,7 +94,7 @@ class TianMaoReader:
             for shop in stores:
                 shop.Calculate()
     #   shop.Print()
-        stores.sort(key=lambda Store: Store.attr['score'], reverse=True)
+        #stores.sort(key=lambda Store: Store.attr['score'], reverse=True)
         con.acquire()
         warp.append(1)
         con.notify_all()

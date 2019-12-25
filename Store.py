@@ -1,8 +1,8 @@
-from Fruit import Fruit
+from Food import Food
 from Error import ParamError
 class Store:
     weight = {'price': -0.2, 'like': 0.2, 'sale': 1, 'fruit': 0.2}
-    def __init__(self,name,price,like,sale,fruit,url):
+    def __init__(self, name, price, like, sale, food, url):
         self.error = False
         if(isinstance(name, str) == False):
             self.error = True
@@ -16,22 +16,22 @@ class Store:
         if(isinstance(sale, int) == False):
             self.error = True
             raise ParamError('attribute \'sale\' must be \'int\'!')
-        if(isinstance(fruit, Fruit) == False):
+        if(isinstance(food, Food) == False):
             self.error = True
-            raise ParamError('attribute \'fruit\' must be \'Fruit\'!')
+            raise ParamError('attribute \'food\' must be \'Food\'!')
         if (isinstance(url, str) == False):
             self.error = True
             raise ParamError('attribute \'url\' must be \'str\'!')
         self.attr = {'name': name,'Performance':{}, 'score': 0,'url' : url}
         self.attr['Performance'] = {'price':price,'like' : like,'sale' : sale}
-        self.fruit = fruit
+        self.fruit = food
         # Assess the shop
         for i in self.attr['Performance'].keys():
             if (Store.weight.get(i) == None):
                 print('Default value:', i)
                 return;
             self.attr['score'] += Store.weight.get(i) * self.attr['Performance'].get(i)
-        if(self.fruit.attr['score'] == 0):
+        if(self.fruit.attr['worked'] == False):
             print('Warning:This Store contains uninitialized data.')
         self.attr['score'] += self.fruit.attr['score']
 
